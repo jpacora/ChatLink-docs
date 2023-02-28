@@ -4,8 +4,8 @@ ChatLink le permite integrar la recepción y envío de mensajes de WhatsApp en c
 - La API utiliza el formato JSON https://www.json.org .
 - Un Webhook es un sistema de comunicación automático que funciona a través de solicitudes del protocolo HTTP y que permite el intercambio de datos entre aplicaciones web en tiempo real.
 - El Webhook recibirá los datos en formato JSON mediante el método POST del protocolo HTTP.
-- Cuando la respuesta de la API contenga esl código de estado **4xx** o **5xx** se responderá con un JSON con el mensaje de error correspondiente.
-- Query String o "Cadena de consulta" son parámetros que se añaden en la URL paara indicar datos.
+- Cuando la respuesta de la API contenga el código de estado **4xx** o **5xx** se responderá con un JSON incluyendo el mensaje de error correspondiente.
+- *Query String* o "Cadena de consulta" son parámetros que se añaden en la URL los cuales indican variables al servidor.
 
 ## Endpoints Abiertos
 
@@ -41,7 +41,7 @@ Endpoints abiertos que no requieren autenticación.
 
 ## Endpoints que requieren Authenticación
 
-Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encabezado la solicitud HTTP mediante el header `Authorization: Bearer TOKEN` o mediante el *Query String* `?token=TOKEN `. Se puede adquirir un **TOKEN** desde el Endpoint anterior.
+Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encabezado la solicitud HTTP mediante el header `Authorization: Bearer TOKEN` o mediante el *Query String* `?token=TOKEN`. Se puede adquirir un **TOKEN** desde el Endpoint anterior.
 
 
 ------------------------------------------------------------------------------------------
