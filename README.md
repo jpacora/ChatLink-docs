@@ -2,7 +2,6 @@
 
 ChatLink le permite integrar la recepción y envío de mensajes de WhatsApp en cualquiera de sus sistemas.
 - La API utiliza el formato JSON https://www.json.org .
-- Las solicitudes que rqeuieren 
 - Un Webhook es un sistema de comunicación automático que funciona a través de solicitudes del protocolo HTTP y que permite el intercambio de datos entre aplicaciones web en tiempo real.
 - El Webhook recibirá los datos en formato JSON mediante el método POST del protocolo HTTP.
 - Cuando la respuesta de la API contenga esl código de estado **4xx** o **5xx** se responderá con un JSON con el mensaje de error correspondiente.
