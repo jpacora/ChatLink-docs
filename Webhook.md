@@ -49,7 +49,7 @@ Adicionalemnte, si el mensaje entrante a la sesión de WhatsApp contiene conteni
 - documentMessage
 - videoMessage
 - contactMessage
-> Estos tipos de mensajes son los entrantes para la sesión de WhatsApp los cu
+> Estos tipos de mensajes son los entrantes para la sesión de WhatsApp los cuales tendrán los siguientes parámetros:
 
 > | Parámetro  | Descripción  |
 > |----------|----------|
