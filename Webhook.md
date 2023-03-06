@@ -60,3 +60,9 @@ Adicionalemnte, si el mensaje entrante a la sesión de WhatsApp contiene conteni
 > | value    | Mensaje recibido (sólo en si el mensaje es del tipo `conversation`)    |
 
 
+------------------------------------------------------------------------------------------
+
+
+## Copyright
+
+Copyright (c) 2023 ChatLink

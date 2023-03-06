@@ -31,7 +31,7 @@ Endpoints abiertos que no requieren autenticación.
 
 > | Propiedad  | Descripción  |
 > |----------|----------|
-> | token    | Token de autorización que se utilizara en cada solicitud HTTP que requiera autenticación    |
+> | token    | Token de autorización que se utilizará en cada solicitud HTTP que requiera autenticación    |
 
 
 </details>
@@ -74,9 +74,9 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 > | `idSession`    | Identificador único para cada sesión de WhatsApp    | string    |
 > | `hasCredentials`    | Indica si la sesión tiene vinculado un dispositivo    | boolean/null    |
 > | `Webhook`    | Webhook configurado para la sesión    | string/null    |
-> | `DownloadMedia`    | Indica si la sesión descargará el contenido multimedia enviado (audio, fotos, video, stickers)    | boolean    |
+> | `DownloadMedia`    | Indica si la sesión descargará el contenido multimedia entrante (audio, fotos, video, stickers)    | boolean    |
 > | `isRunning`    | Indica si la sesión se encuentra corriendo   | boolean    |
-> | `qr`    | Valor del QR a escanear con la aplicación de WhatsAPp para autenticar la sesión   | string    |
+> | `qr`    | Valor del QR a escanear con la aplicación de WhatsApp para autenticar la sesión   | string    |
 > | `isConnected`    | Identifica si la sesión se encuentra conectada y autenticada    | boolean    |
 
 
@@ -93,9 +93,9 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 > | `idSession`    | Identificador único para cada sesión de WhatsApp    | string    |
 > | `hasCredentials`    | Indica si la sesión tiene vinculado un dispositivo    | boolean/null    |
 > | `Webhook`    | Webhook configurado para la sesión    | string/null    |
-> | `DownloadMedia`    | Indica si la sesión descargará el contenido multimedia enviado (audio, fotos, video, stickers)    | boolean    |
+> | `DownloadMedia`    | Indica si la sesión descargará el contenido multimedia entrante (audio, fotos, video, stickers)    | boolean    |
 > | `isRunning`    | Indica si la sesión se encuentra corriendo   | boolean    |
-> | `qr`    | Valor del QR a escanear con la aplicación de WhatsAPp para autenticar la sesión   | string    |
+> | `qr`    | Valor del QR a escanear con la aplicación de WhatsApp para autenticar la sesión   | string    |
 > | `isConnected`    | Identifica si la sesión se encuentra conectada y autenticada    | boolean    |
 
 </details>
@@ -143,7 +143,7 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 </details>
 
 <details>
- <summary><code>POST</code> <code><b>/api/Session/{idSession}/SendMessage</b></code> <code>Envíar un Mensaje</code></summary>
+ <summary><code>POST</code> <code><b>/api/Session/{idSession}/SendMessage</b></code> <code>Enviar un Mensaje</code></summary>
 
 ##### Parámetros
 
@@ -170,7 +170,7 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 
 > | Parámetro              |  Requerido?     | Tipo de Dato      | Descripción                         |
 > |-------------------|-----------|----------------|-------------------------------------|
-> | `Webhook` |  Sí | string   | Webhook donde se haran las peteiciones POST con los mensaje enstrantes de la sesión        |
+> | `Webhook` |  Sí | string   | Webhook donde se haran las peticiones POST con los mensajes entrantes de la sesión        |
 
 
 
@@ -184,3 +184,7 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 </details>
 
 ------------------------------------------------------------------------------------------
+
+## Copyright
+
+Copyright (c) 2023 ChatLink
