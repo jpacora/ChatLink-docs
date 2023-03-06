@@ -24,7 +24,7 @@ $client->setToken($token); // la sesión durará lo que se haya especificado al 
 ```
 ## Ciclo de vida de la sesión de WhatsApp
 
-```
+```php
 // Creamos una nueva sesión de WhatsApp
 $idSession = $client->newSession();
 // (OPCIONAL) Configuramos una URL donde se nos enviarán los mensajes entrantes
