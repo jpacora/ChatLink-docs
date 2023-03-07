@@ -41,6 +41,16 @@ $client->sendMessage($idSession, $To, $text);
 $client->stopSession($idSession);
 
 ```
+
+## Leer los datos enviados al Webhook
+
+ChatLink envia información en formato JSON hacia su Webhok mediande el método POST del protocolo HTTP, para que PHP pueda pueda interpretar los datos en PHP se debe hacer lo siguiente:
+
+```php
+$json = file_get_contents('php://input');
+$data = json_decode($json);
+```
+
 ------------------------------------------------------------------------------------------
 
 
