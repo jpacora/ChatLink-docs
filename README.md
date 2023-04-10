@@ -163,6 +163,29 @@ Los Endpoints cerrados requieren que se incluya un **TOKEN** válido en el encab
 
 </details>
 
+
+<details>
+ <summary><code>POST</code> <code><b>/api/Session/{idSession}/SendAttachment</b></code> <code>Enviar un Adjunto</code></summary>
+
+##### Parámetros
+
+> | Parámetro              |  Requerido?     | Tipo de Dato      | Descripción                         |
+> |-------------------|-----------|----------------|-------------------------------------|
+> | `To` |  Sí | string   | ID del grupo/usuario de WhatsApp, también puede ser el número de teléfono con el prefijo correspondiente al país        |
+> | `URL` |  Sí | string   | Archivo que se enviará (MP3/PDF/JPEG/PNG)        |
+> | `caption` |  No | string   | Mensaje que acompaña al adjunto        |
+
+
+
+##### Respuesta JSON
+
+> | Propiedad  | Descripción  | Tipo de Dato  |
+> |----------|----------|----------|
+> | `status`    | Estado de éxito   | string    |
+
+
+</details>
+
 <details>
  <summary><code>POST</code> <code><b>/api/Session/{idSession}/SetWebhook</b></code> <code>Configurar el Webhook para una sesión</code></summary>
 

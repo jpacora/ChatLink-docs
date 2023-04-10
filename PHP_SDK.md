@@ -37,6 +37,8 @@ $client->startSession($idSession);
 $client->sessionQR($idSession);
 // Una vez escaneado el QR podemos enviar un mensaje
 $client->sendMessage($idSession, $To, $text);
+// Enviamos un adjunto
+$client->sendAttachment($idSession, $To, $URL, $caption);
 // Paramos al sesión de WhatsApp para dejar de recibir mensajes
 $client->stopSession($idSession);
 

@@ -49,6 +49,7 @@ Adicionalemnte, si el mensaje entrante a la sesión de WhatsApp contiene conteni
 - documentMessage
 - videoMessage
 - contactMessage
+- locationMessage
 > Estos tipos de mensajes son los entrantes para la sesión de WhatsApp los cuales tendrán los siguientes parámetros:
 
 > | Parámetro  | Descripción  |
@@ -58,7 +59,7 @@ Adicionalemnte, si el mensaje entrante a la sesión de WhatsApp contiene conteni
 > | messageTimestamp    | Marca de tiempo del mensaje   |
 > | isMessageFromGroup    | Indica si el mensaje proviene de un grupo    |
 > | value    | Mensaje recibido (sólo en si el mensaje es del tipo `conversation`)    |
-
+> | location    | Coordenadas de ubicación (sólo en si el mensaje es del tipo `locationMessage `)    |
 
 ------------------------------------------------------------------------------------------
 
